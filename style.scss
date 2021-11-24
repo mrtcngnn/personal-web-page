@@ -1,0 +1,502 @@
+$color1: white !important;
+$color2: #FF4500 !important;
+$color3: #808080 !important;
+$color4: rgb(37, 37, 37) !important;
+$color5: #747e80 !important;
+$color6: #434546 !important;
+$color7: rgb(31, 30, 30) !important;
+$color8: #806dfa !important;
+$color9: #00cffb !important;
+$color10: #141414 !important;
+
+.body{
+    position: fixed;
+    margin: 0;
+    height: 100%;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+#bg{
+    background: url("../content/bg.png") no-repeat center center fixed; 
+}
+
+#main{
+    margin-bottom: 5rem;
+}
+
+#informationColumn{
+    padding-left: 50px;
+}
+.container{
+    color: $color1;
+    margin-top: 6rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+#profileColumn{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#profilePhoto{
+    background: url("../content/pp.jpg");
+    border-radius: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 30rem;    
+    display: flex;
+    align-items: flex-end;
+}
+
+#socialMediaIcons{
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    :hover{
+        color: $color2;
+    }
+}
+
+#socialMediaButtons{
+    color: $color1;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 70px;
+}
+
+
+#socialMediaIcons li{
+    display: inline-block;
+}
+
+#talents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#talentsTitle{
+    font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
+    color: $color1;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.eachTalent{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.talentType{
+    font-size: 16px;
+    color: $color3;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    line-height: .8;
+}
+
+.talentBar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 70%;
+    border-radius: 8px;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, #806dfa, #009eff, #00c1ff, #00dcf8, #6ef2e1);
+}
+
+#talentPercent{
+    font-style: italic;
+    font-weight: 500;
+    color: $color1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//RIGHT SIDE
+
+#navigationBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #000000, #141414); 
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
+
+
+#hamburgerMenuIcon{
+    margin-left: 5rem;
+    text-decoration: none;
+    color: $color1;
+    font-size: 20px;
+    :hover{
+        
+        color: $color2;
+    }
+}
+
+#navigationBar li{
+    margin-top: 1rem;
+    margin-left: 2.25rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    :hover{
+        color: $color2;
+        text-decoration: none;
+    }
+}
+
+.navigationElement{
+    text-decoration: none;
+    color: $color1;
+}
+
+#informationPart{
+    margin-left: -1rem;
+    padding: 10px;
+}
+
+#infoRow{
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+
+#bioRow{
+    display: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#education{
+    display: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#experience{
+    display: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#languages{
+    display: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#whatIDo{
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#whatTheySay{
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#loveTo{
+    display: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+#contact{
+    display: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: $color10;
+}
+
+#title{
+    //font ayarla
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 20px;
+    color: $color2;
+    letter-spacing: 0;
+    line-height: .8;
+    text-decoration: underline double;
+}
+
+#aboutInfo{
+    margin-top: 1rem;
+}
+
+#infoIcon{
+    color: $color1;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#infoTitle{
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    color: $color5;
+}
+
+#infoContent{
+    color: $color1;
+    font-size: 15px;
+}
+
+#shortBioInfo{
+    font-size: 15px;
+}
+
+#sign{
+    max-width: 100%;
+    height: auto;
+}
+
+#loveToInfo{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#languagesInfo{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.languageBar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 70%;
+    border-radius: 8px;
+    margin-top: 0.30rem;
+    background-image: linear-gradient(to right, #806dfa, #009eff, #00c1ff, #00dcf8, #6ef2e1);
+}
+
+#languagePercent{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    color: $color1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#educationInfo{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#educationTitle{
+    font-weight: 500;
+    margin-left: -1rem;
+}
+
+#educationInfoContent{
+    color: $color5;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+#inputArea{
+    margin-top: 1rem;
+}
+
+#contactCol{
+    padding: 10px;
+}
+
+::placeholder { 
+    color: $color1;
+    position: absolute;
+    padding: 0px;
+}
+
+.contactInput{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    color: $color1;
+    width: 100%;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid rgb(49, 49, 49);
+}
+
+#messageInput{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0;
+    width: 100%;
+    height: 150px;
+    border: 1px solid rgb(49, 49, 49);
+}
+
+#whatIDoInfo{
+    margin-top: 1rem;
+}
+
+#whatIDoCard{
+    height: 250px;
+    width: 100%;
+    background-color: $color7;
+}
+
+#whatIDoIcon{
+    height: 60px;
+    width: 60px;
+    margin-top: 1rem;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #806dfa, #009eff, #00c1ff, #00dcf8, #6ef2e1);
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    text-align: center;
+    line-height: 60px;
+}
+
+#whatIDoTitle{
+    margin-top: 1rem;
+    color: $color1;
+    :hover{
+        color: $color8;
+        cursor: pointer;
+    }
+}
+
+#whatIDoContent{
+    text-align: center;
+    color: $color5;
+}
+
+#whatTheySaysInfo{
+    margin-top: 1rem;
+}
+
+#whatTheySaysImg{
+    width: 200px; 
+    height: 200px;
+}
+
+#whatTheySaysContent{
+    color: $color5;
+    font-size: 15px;
+}
+
+#whatTheySaysName{
+    color: $color1;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#whatTheySaysCompany{
+    color: $color2;
+    font-size: 15px;
+    margin-top: -1rem;
+}
+
+.contactSendButton{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: rgb(0, 185, 9);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.contactSendButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.contactSendButton:active {
+    color: rgb(0, 0, 0);
+}
+
+.contactSendButton:active:after {
+    background: transparent;
+}
+
+.contactSendButton:hover:before {
+    opacity: 1;
+}
+
+.contactSendButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.contactSendButton:focus{
+    outline: 0 !important;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
