@@ -1,24 +1,47 @@
-$(document).ready(function(){
-    $("#nb-home").on("click",function(){
-        $("#infoRow").fadeToggle();
-        $("#whatIDo").fadeToggle();
-        $("#whatTheySay").fadeToggle();
-    });
-});
+function homeElements() {
+    $('#infoRow').fadeIn('1000');
+    $('#whatIDo').fadeIn('1000');
+    $('#whatTheySay').fadeIn('1000');
+    $('#loveTo').fadeOut('1000');
+    $('#bioRow').fadeOut('1000');
+    $('#education').fadeOut('1000');
+    $('#experience').fadeOut('1000');
+    $('#languages').fadeOut('1000');
+    $('#contact').fadeOut('1000');
+}
 
-$(document).ready(function(){
-    $("#nb-about").on("click",function(){
-        $("#bioRow").fadeToggle();
-        $("#education").fadeToggle();
-        $("#experience").fadeToggle();
-        $("#languages").fadeToggle();
-        $("#loveTo").fadeToggle();
-    });
-});
+function aboutElements() {
+    $('#infoRow').fadeOut('1000');
+    $('#whatIDo').fadeOut('1000');
+    $('#whatTheySay').fadeOut('1000');
+    $('#loveTo').fadeIn('1000');
+    $('#bioRow').fadeIn('1000');
+    $('#education').fadeOut('1000');
+    $('#experience').fadeOut('1000');
+    $('#languages').fadeOut('1000');
+    $('#contact').fadeOut('1000');
+}
 
-$(document).ready(function(){
-    $("#nb-contact").on("click",function(){
-        $("#contact").fadeToggle();
-    });
-});
+function portfolioElements() {
+    $('#infoRow').fadeOut('1000');
+    $('#whatIDo').fadeOut('1000');
+    $('#whatTheySay').fadeOut('1000');
+    $('#loveTo').fadeOut('1000');
+    $('#bioRow').fadeOut('1000');
+    $('#education').fadeIn('1000');
+    $('#experience').fadeIn('1000');
+    $('#languages').fadeIn('1000');
+    $('#contact').fadeOut('1000');
+}
 
+function contactElements() {
+    $('#infoRow').fadeOut('1000');
+    $('#whatIDo').fadeOut('1000');
+    $('#whatTheySay').fadeOut('1000');
+    $('#loveTo').fadeOut('1000');
+    $('#bioRow').fadeOut('1000');
+    $('#education').fadeOut('1000');
+    $('#experience').fadeOut('1000');
+    $('#languages').fadeOut('1000');
+    $('#contact').fadeIn('1000');
+}

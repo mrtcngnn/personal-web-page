@@ -9,12 +9,11 @@
         <link rel="stylesheet" href="../style/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript" src="../js/displayAnimations.js"></script>
-        <title>MCG</title>
+        <link rel="shortcut icon" href="../content/logo.png" />
+        <title>Mert Can Gönen - Junior Web Developer</title>
     </head>
     <body id="bg">
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
         <div class="container" id="main">
             <div class="row">
                 <div class="col-4" id="profileColumn">
@@ -63,25 +62,25 @@
                         <div class="col-12">
                             <ul>
                                 <li>
-                                    <a href="#" class="navigationElement" id="nb-home">
+                                    <a href="#" class="navigationElement" id="nb-home" onclick="homeElements()">
                                         <i class="fas fa-home"></i>
                                         <span>Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="navigationElement" id="nb-about">
+                                    <a href="#" class="navigationElement" id="nb-about" onclick="aboutElements()">
                                         <i class="fas fa-user-alt"></i>
                                         <span>About</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="navigationElement" id="nb-portfolio">
+                                    <a href="#" class="navigationElement" id="nb-portfolio" onclick="portfolioElements()">
                                         <i class="fas fa-laptop-code"></i>
                                         <span>Portfolio</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="navigationElement" id="nb-contact">
+                                    <a href="#" class="navigationElement" id="nb-contact" onclick="contactElements()">
                                         <i class="fas fa-phone"></i>
                                         <span>Contact</span>
                                     </a>
@@ -258,6 +257,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row" id="bioRow">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12" id="title">
+                                        <h5>Short Bio</h5>
+                                    </div>
+                                    <div class="col-12" id="shortBioInfo">
+                                        <div class="row mt-3">
+                                            <div class="col-6">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur nam sint vel corrupti, enim, minima voluptate incidunt amet placeat iusto a quasi sed ducimus voluptatibus maiores optio, doloribus eligendi.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio dolorum, tenetur necessitatibus ducimus exercitationem eligendi obcaecati quis commodi quidem ex nihil dolor veniam deserunt aliquid, sequi debitis suscipit. Accusamus!</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa aliquam pariatur explicabo dolore suscipit vitae consequuntur veniam officia, sapiente enim nostrum voluptas sequi deleniti adipisci optio libero porro animi.</p>
+                                                <img id="sign" src="../content/sign.jpg" alt="sign"> <!-- add sign -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row mt-4" id="loveTo">
                             <div class="container-fluid">
                                 <div class="row">
@@ -331,28 +351,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4" id="bioRow">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12" id="title">
-                                        <h5>Short Bio</h5>
-                                    </div>
-                                    <div class="col-12" id="shortBioInfo">
-                                        <div class="row mt-3">
-                                            <div class="col-6">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur nam sint vel corrupti, enim, minima voluptate incidunt amet placeat iusto a quasi sed ducimus voluptatibus maiores optio, doloribus eligendi.</p>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio dolorum, tenetur necessitatibus ducimus exercitationem eligendi obcaecati quis commodi quidem ex nihil dolor veniam deserunt aliquid, sequi debitis suscipit. Accusamus!</p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa aliquam pariatur explicabo dolore suscipit vitae consequuntur veniam officia, sapiente enim nostrum voluptas sequi deleniti adipisci optio libero porro animi.</p>
-                                                <img id="sign" src="../content/sign.jpg" alt="sign"> <!-- add sign -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4" id="education">
+                        <div class="row" id="education">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12" id="title">
@@ -518,7 +517,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4" id="contact">
+                        <div class="row" id="contact">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12" id="title">
@@ -527,28 +526,30 @@
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-12" id="inputArea">
-                                                <div class="row">
-                                                    <div class="col-6" id="contactCol">
-                                                        <input type="text" placeholder="Full Name *" class="contactInput">
+                                                <form action="" method="post">
+                                                    <div class="row">
+                                                        <div class="col-6" id="contactCol">
+                                                            <input type="text" placeholder="Full Name *" class="contactInput">
+                                                        </div>
+                                                        <div class="col-6" id="contactCol">
+                                                            <input type="text" placeholder="Email *" class="contactInput">
+                                                        </div>
+                                                        <div class="col-6" id="contactCol">
+                                                            <input type="text" placeholder="Phone" class="contactInput">
+                                                        </div>
+                                                        <div class="col-6" id="contactCol">
+                                                            <input type="text" placeholder="Subject *" class="contactInput">
+                                                        </div>
+                                                        <div class="col-12" id="contactCol">
+                                                            <input type="text" placeholder="Message *" id="messageInput">
+                                                        </div>
+                                                        <div class="col-12 text-right mt-2">
+                                                            <button class="contactSendButton" onclick="href='mrtcngonen@gmail.com'">
+                                                                <span class="button-text">Send<i class="far fa-paper-plane ml-3"></i></span>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-6" id="contactCol">
-                                                        <input type="text" placeholder="Email *" class="contactInput">
-                                                    </div>
-                                                    <div class="col-6" id="contactCol">
-                                                        <input type="text" placeholder="Phone" class="contactInput">
-                                                    </div>
-                                                    <div class="col-6" id="contactCol">
-                                                        <input type="text" placeholder="Subject *" class="contactInput">
-                                                    </div>
-                                                    <div class="col-12" id="contactCol">
-                                                        <input type="text" placeholder="Message *" id="messageInput">
-                                                    </div>
-                                                    <div class="col-12 text-right mt-2">
-                                                        <button class="contactSendButton" onclick="href='mrtcngonen@gmail.com'">
-                                                            <span class="button-text">Send<i class="far fa-paper-plane ml-3"></i></span>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -556,12 +557,9 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
                 </div>
             </div>
         </div>
-        
     </body>
 </html>
 
